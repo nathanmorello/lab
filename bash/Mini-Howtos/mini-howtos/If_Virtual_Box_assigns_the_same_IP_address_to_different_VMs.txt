@@ -1,0 +1,20 @@
+
+
+＼（〇_ｏ）／
+-----------------------------------------------------------
+If Virtual Box assigns the same IP address to different VMs
+-----------------------------------------------------------
+Label: Networking
+Label: VM
+Label: Servers
+
+1. To generate a new random MAC address for the cloned VM, you can re-initialize it. Firstly, turn off your VM and then go to Settings >> Network >> Advanced. Click the two circular arrows to generate a new MAC and then restart your VM. After your VM boots, the DHCP server should assign it a different IP address.
+
+2. You might have to modify the  machine-id  as well.
+    sudo rm -f /etc/machine-id
+    sudo dbus-uuidgen --ensure=/etc/machine-id
+    sudo rm /var/lib/dbus/machine-id
+    sudo dbus-uuidgen --ensure
+    reboot
+All together: rm -f /etc/machine-id && dbus-uuidgen --ensure=/etc/machine-id && rm /var/lib/dbus/machine-id && dbus-uuidgen --ensure && reboot
+

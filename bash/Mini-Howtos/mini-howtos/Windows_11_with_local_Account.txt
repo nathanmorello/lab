@@ -1,0 +1,30 @@
+
+
+＼（〇_ｏ）／
+-----------------------------
+Windows 11 with local Account
+-----------------------------
+Label: Windows
+
+Source: https://www.reddit.com/r/Windows11/comments/1jk726z/installing_window_11_local_account_only/
+
+Avoid Microsoft account and create a local account when installing Windows 11
+
+At the point in the install process where it asks you to sign into your internet do
+
+SHIFT+F10
+>> OOBE\BYPASSNRO
+
+hit enter, the pc will reboot and youll eventually end back up to the same internet login screen but at the bottom of that screen youll see
+
+-->>"i dont have internet"
+
+
+When it is too late...
+To forget a WiFi network using the command prompt, open Command Prompt as an administrator, then type
+
+> netsh wlan show profiles
+(to see a list of saved networks), and use
+> netsh wlan delete profile name="<NetworkName>"
+(to delete the desired network by replacing <NetworkName>)
+

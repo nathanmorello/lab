@@ -1,0 +1,22 @@
+
+
+＼（〇_ｏ）／
+--------------------------
+VirtualBox Port Forwarding
+--------------------------
+Label: VM
+Label: Networking
+
+Source: https://nsrc.org/workshops/2014/sanog23-virtualization/raw-attachment/wiki/Agenda/ex-virtualbox-portforward-ssh.htm
+
+Settings > Networking > Attached to: NAT
+Port forwarding > +
+Name: SSH
+Protocol: TCP
+Host IP: -
+Host Port: 2222
+Guest IP: -
+Guest Port: 22
+
+ssh -l _username_ -p 2222 127.0.0.1
+
