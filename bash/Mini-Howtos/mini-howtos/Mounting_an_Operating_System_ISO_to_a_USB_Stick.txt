@@ -1,0 +1,40 @@
+
+＼（〇_ｏ）／
+-------------------------------------------------
+Mounting an Operating System ISO to a USB Stick
+-------------------------------------------------
+Label: Linux
+Label: Partitions
+
+Insert the USB stick and locate it in the file system:
+
+$ lsblk
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda      8:0    0 465.8G  0 disk
+├─sda1   8:1    0  100G  0 part /
+└─sda2   8:2    0 365.8G  0 part /home
+sdb      8:16   1  14.9G  0 disk
+└─sdb1   8:17   1  14.9G  0 part /media/usb
+
+
+Unmount the USB (if mounted):
+
+$ sudo umount /dev/sdb*
+
+
+Write the ISO to the USB
+
+(Use dd with caution!)
+
+$ sudo dd if=archlinux-2025.09.01-x86_64.iso of=/dev/sdb bs=4M status=progress oflag=sync
+
+
+if= → input file (the ISO)
+of= → output file (the USB device)
+bs=4M → block size, faster than the default 512B
+status=progress → shows progress
+oflag=sync → ensures all data is fully written
+
+⚠️ Double-check of=/dev/sdb. Writing to the wrong disk will erase everything.
+
+

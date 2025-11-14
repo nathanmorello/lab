@@ -1,0 +1,15 @@
+
+
+＼（〇_ｏ）／
+-------------------
+ZFS Useful Commands
+-------------------
+Label: ZFS
+
+
+Check ZFS Partitions
+zfs list -r -o space,refer,encryption,mounted,mountpoint
+
+CHeck snapshot and space
+zfs list -r -t all daten/evolution
+

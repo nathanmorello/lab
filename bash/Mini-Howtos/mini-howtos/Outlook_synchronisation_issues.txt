@@ -1,0 +1,14 @@
+
+
+＼（〇_ｏ）／
+------------------------------
+Outlook synchronisation issues
+------------------------------
+Label: Machines
+Label: Outlook
+
+If you move by mistake an Outlook folder, for example from Inbox to Sent, and you cannot move it back to its original position.
+First of all, you should make sure that the foders and e-mails on the server have not been affected. 
+Then you should first try going to the web interface, or "New Outlook" and do it from there. This should automatically synchronize your local "Classic Outlook"
+Otherwise you can try renaming the .ots file in ots_old and let Outlook regenerate a new one
+

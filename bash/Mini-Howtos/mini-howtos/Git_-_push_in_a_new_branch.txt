@@ -1,0 +1,22 @@
+
+
+＼（〇_ｏ）／
+--------------------------
+Git - push in a new branch
+--------------------------
+Label: GitHub
+
+1. Create the new branch
+git checkout -b name-of-branch
+
+2. Add the files you want to commit
+git add .
+
+
+(or specify files: git add file1 file2)
+
+3. Make the commit
+git commit -m "Commit message"
+
+4. Push the new branch to GitHub
+git push -u origin name-of-branch

@@ -1,0 +1,16 @@
+
+
+＼（〇_ｏ）／
+-------------------------
+SSH no hostkeys available
+-------------------------
+Label: Networking
+Label: SSH
+
+If you get this error
+
+sshd: no hostkeys available -- exiting
+
+1. In the /etc/ssh/ folder run ssh-keygen -A
+2. /etc/init.d/ssh start
+

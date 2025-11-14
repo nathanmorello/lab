@@ -1,0 +1,17 @@
+
+
+＼（〇_ｏ）／
+-----------
+Commands VIM
+-----------
+Label: Linux
+Label: VIM
+
+
+Indent multiple lines quickly in vi
+ESC
+>>
+<<
+Multiple lines
+4>>
+4<<
