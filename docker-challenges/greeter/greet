@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "================================"
+echo "  ${GREETING}, ${NAME}!"
+echo "  Running in container: $(hostname)"
+echo "================================"
