@@ -1,0 +1,10 @@
+
+         voting-app (python)    result-app (jnode)
+                |                       |
+                |                       |
+              redis                 postgres
+                |                       |
+                |                       |
+                |                       |
+                |________worker_________|
+
